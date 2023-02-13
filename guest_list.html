@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title> Guest List </title>
+</head>
+
+<body>
+	<script>
+		function getWinners() {
+			let clients = []
+			let qunt = Math.floor(Math.random() * 1001 - 10 + 1) + 10;
+			for (let i = 0; i < qunt; i++)
+			{
+				let t = Math.floor(Math.random() * 1001);
+				clients.push(t);				
+			}
+			let winners = []
+			for (let i = 0; i < 3; i++)	{
+				let index = Math.floor(Math.random() * clients.length);
+				winners.push(clients[index]);
+				
+			}
+			document.write("<h1>Наши победители:" + winners + "</h1>")
+		}
+		getWinners()
+	</script>
+</body>
+</html>	
