@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title> Massives </title>
+</head>
+
+<body>
+	<script>
+		function massiveOfNumbers() { 
+			let numbers = [];
+			let qunt = 20;
+			for (let i = 0; i < qunt; i++)
+			{
+				let t = Math.floor(Math.random() * 21) + 1;
+				numbers.push(t);				
+			}
+			let massiveOfEven = [];
+			for (let i = 0; i < numbers.length; i++) {
+				if  (numbers[i] % 2 == 0) {
+					massiveOfEven.push(numbers[i])
+				}
+				
+			}
+			document.write("<h1>Massive we have: " + numbers + "</h1>")
+			document.write("<h1> Even massive that we have: " + massiveOfEven + "</h1>")
+		}
+		massiveOfNumbers()
+	</script>
+</body>
+</html>	
