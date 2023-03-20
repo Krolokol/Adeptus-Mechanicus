@@ -1,0 +1,163 @@
+.container {
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    color: rgb(122, 43, 43);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10%;
+}
+
+header nav {
+    margin: 25px 0;
+    background-color: #E64A19;
+    
+}
+
+header h1 {
+    display: block;
+    border: 1px solid;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+nav ul {
+    padding:0;
+    margin:0;
+    list-style: none;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+nav ul li {
+    width: 120px;
+    height: auto;
+    display:inline-block;
+    background-color: #E64A19;
+    text-align: center;
+}
+
+nav ul li .catalog{
+    display:inline-block;
+    background-color: #E64A19;
+}
+
+
+nav a {
+    display:block;
+    padding:0 10px;
+    color:#FFF;
+    font-size:20px;
+    line-height: 60px;
+    text-decoration:none;
+}
+
+nav a:hover {
+    background-color: black;
+}
+
+header nav ul .catalog {
+    margin: 0;
+    display: none;
+    position: absolute;
+}
+
+nav ul li:hover > .catalog {
+    display: inherit;
+    background-color: black;
+}
+
+nav ul .catalog li {
+    min-width:250px;
+    float:none;
+    display:list-item;
+    position: relative;
+}
+
+header nav ul .catalog1 {
+    margin: 0;
+    display: none;
+    position: absolute;
+}
+
+nav ul li:hover > .catalog1 {
+    display: inherit;
+    background-color: black;
+}
+
+nav ul .catalog1 li {
+    min-width:250px;
+    float:none;
+    display:list-item;
+    position: relative;
+}
+
+header nav ul #bag {
+    width: 120px;
+    height: auto;
+    display:inline-block;
+    background-color: #E64A19;
+    text-align: center;
+    margin-left: 250px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+section h2 {
+    margin-bottom: 25px; 
+    margin-left: 120px;
+    margin-top: 75px;
+}
+
+section .catalog {
+    display: flex;
+    flex-direction: row;
+}
+
+section .catalog .mach {
+    border: 5px solid #2f5815;
+    border-radius: 10%;
+    padding: 10px;
+    margin-left: 110px;
+    box-shadow: 5px 3px 4px 2px black;
+}
+
+section .catalog .mach img {
+    width: 175px;
+    height: 175px;
+}
+
+section .catalog .mach p {
+    text-align: left;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+section .catalog .mach button {
+    background-color: rgb(102, 21, 21);
+    color:rgb(223, 119, 119);
+    margin-left: 0px;
+    height: 50px;
+    width: 100px;
+    font-size: 16px;
+    border-radius: 10px;
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+          transition:         transform .3s ease-in-out;
+}
+
+section .catalog .mach button:hover {
+    -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
