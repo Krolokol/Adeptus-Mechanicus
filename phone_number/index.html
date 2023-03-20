@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script type="text/javascript">
+
+function ValidPhone() {
+    const re = /^[\d\+][\d\(\)\ -]{4,11}\d$/;
+    const myPhone = document.getElementById('phone').value;
+    const valid = re.test(myPhone);
+    if (valid) output = 'Номер телефона введен правильно!';
+    else output = 'Номер телефона введен неправильно!';
+    document.getElementById('message').innerHTML = document.getElementById('message').innerHTML = output;
+    return valid;
+}  
+ 
+</script>
+
+</head>
+
+<body>
+<p id="message" >Пожалуйста, заполните все поля формы!</p> 
+Телефон: <input id="phone" name="phone" type="text" size="20" /><br /> 
+<input name="button" type="submit" value="Проверить" onClick="ValidPhone();" />
+</body>
+
+</html>
